@@ -49,8 +49,12 @@ public class Calculadora {
                 double numero1 = scanner.nextDouble();
                 System.out.print("\nCual es el segundo valor?");
                 double numero2 = scanner.nextDouble();
-                double resultado = numero1 / numero2;
-                System.out.print("\nEl resultado es: " + resultado);
+                if(numero1 == 0 || numero2 == 0){
+                    System.out.print("\nNo se puede operar.");
+                } else {
+                    double resultado = numero1 / numero2;
+                    System.out.print("\nEl resultado es: " + resultado);
+                }
 
 
             }
